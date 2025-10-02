@@ -142,12 +142,6 @@ was used for the php script. For example, you should use this command
 `python3 test_no_tipping.py --port XXXX --name TEST`. Therefore, your
 code should also accept host name and port number as an argument.
 
-### requirements
-
-`test_no_tipping.py` uses `SocketClient`, install `hps-nyu`:
-```
-pip install --user hps-nyu
-```
 
 ### Description of random strategy
 
@@ -190,13 +184,9 @@ You can view the running game from the index.html file (by going to
   | Team          | Received On | Test |
   | ------------- | ----------- | ---- |
   | Team Player   | 10/01       | PASS |
-  | Yifan         | 10/04       | PASS |
-  | Omicron       | 10/04       | PASS |
-  | CoCo 11       | 10/05       | PASS |
-  | Red Scarf     | 10/05       | PASS |
-  | NimRod        | 10/05       | PASS |
-  | Space Marines | 10/05       |      |
-  | Team Z        | 10/05       | PASS |
-  | Black Box     | 10/05       | PASS |
-  | ys3450        | 10/05       | PASS |
+  | AAAAA         | 10/04       | PASS |
+  | BBBBBBB       | 10/04       | PASS |
+  | CCCCCCC       | 10/05       | PASS |
+  | DDDDDDDDD     | 10/05       | PASS |
+  | EEEEEE        | 10/05       | PASS |
 
