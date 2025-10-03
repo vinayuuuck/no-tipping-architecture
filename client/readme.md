@@ -6,6 +6,6 @@
 
 - `--ip`: server ip to connect to, default 'localhost'
 
-- `--port`: server port to connect to, default `5000`
+- `--port`: server port to connect to, default `8000`
 
-- `--name`: name of the client, change the default to your team name on line `82`
+- `--name`: name of the client, change the default to your team name
