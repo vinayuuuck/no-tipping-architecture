@@ -130,7 +130,7 @@ board goes from -30 to 30 meters).
 send the JSON describing the game state to you. You can then send
 your move per the instructions above.
 
-You can find starter code for each language under `clients/<language>/` folders.
+You can find starter code for the Python client under `client/` folder.
 Read the `readme.md` for instructions.
 
 ## Random Strategy Test Client
@@ -138,18 +138,17 @@ Read the `readme.md` for instructions.
 `test_no_tipping.py` is included to test your algorithm against.
 
 To run the test script, use the same host name and port number that
-was used for the php script. For example, you should use this command
+was used for the PHP script. For example, you should use this command
 `python3 test_no_tipping.py --port XXXX --name TEST`. Therefore, your
 code should also accept host name and port number as an argument.
-
 
 ### Description of random strategy
 
 A Random Strategy should play the first or second player's game
-(depending on the command line). During AddMode, it should choose a
+(depending on the command line). During `AddMode`, it should choose a
 random remaining block and place it as far left as possible so as to
-avoid tipping. During RemoveMode, it should examine all blocks on the
-board, determine which are will not cause tipping, and remove a
+avoid tipping. During `RemoveMode`, it should examine all blocks on the
+board, determine which will not cause tipping, and remove a
 random one of those.
 
 ## Localhost Server
@@ -160,33 +159,32 @@ Start the main server as a separate process by running:
 php main.php <port> <number of weights> [-w]
 ```
 
-`-w` is an optional command line argument which forces a 1 second
-pause between turns(this delay does not affect each clients allowed
+`-w` is an optional command line argument which forces a one-second
+pause between turns (this delay does not affect the client's allowed
 time to run).
 
-You can also run an instance of the webserver for a visual depiction
+You can also run an instance of the web-server for a visual depiction
 with the command `php -S <hostname:port>`. Make sure the port of the
-server and webserver are different.
+server and web-server are different.
 
 For example:
 ```
 php -S localhost:8000
 ````
-You can view the running game from the index.html file (by going to
-  `localhost:8000/index.html`.
+You can view the running game from the index.html file by going to
+`localhost:8000/index.html`.
 
-  Have both clients establish a connection to the server. If you are
-  using test client you can do so with `python3 test_no_tipping.py
-  --port XXXX --name TEST`.
+Have both clients establish a connection to the server. If you are
+using test client you can do so with `python3 test_no_tipping.py
+--port XXXX --name TEST`.
 
-  ## Received Code
+## Received Code
 
-  | Team          | Received On | Test |
-  | ------------- | ----------- | ---- |
-  | Team Player   | 10/01       | PASS |
-  | AAAAA         | 10/04       | PASS |
-  | BBBBBBB       | 10/04       | PASS |
-  | CCCCCCC       | 10/05       | PASS |
-  | DDDDDDDDD     | 10/05       | PASS |
-  | EEEEEE        | 10/05       | PASS |
-
+| Team          | Received On | Test |
+| ------------- | ----------- | ---- |
+| Team Player   | 10/01       | PASS |
+| AAAAA         | 10/04       | PASS |
+| BBBBBBB       | 10/04       | PASS |
+| CCCCCCC       | 10/05       | PASS |
+| DDDDDDDDD     | 10/05       | PASS |
+| EEEEEE        | 10/05       | PASS |

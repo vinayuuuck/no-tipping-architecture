@@ -1,12 +1,5 @@
 # Python Client
 
-## requirement
-
-Install `hps-nyu` to use the SocketClient.
-```
-pip install --user hps-nyu
-```
-
 ## args
 
 - `--first`: Indicates whether client should go first
